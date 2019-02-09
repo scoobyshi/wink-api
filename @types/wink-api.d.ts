@@ -150,6 +150,8 @@ declare module WinkAPI {
 
     export interface IPubNubInfo {
         subscribe_key: string;
+        channel: string;
+        origin: string;
         key: string;
     }
 

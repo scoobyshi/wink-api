@@ -25,6 +25,16 @@ for typescript users, this can install the module's typings globally:
 typings install file:node_modules/wink-api/@types/wink-api.d.ts --save --global
 ```
 
+alternatively, you can include it in your project by updating your tsconfig.json with:
+
+```
+  "files": [
+    "node_modules/wink-api/@types/wink-api.d.ts"
+  ],
+```
+
+If you are using ts-node, you will need to pass the `--files` flag to it to ensure it picks up this definition appropriately.
+
 ## Setup
 Add an app at https://developer.wink.com and wait under a day for acceptance.  
 You'll need to get the client ID and secret.
